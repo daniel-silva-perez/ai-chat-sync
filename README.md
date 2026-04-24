@@ -1,5 +1,9 @@
 # AI Chat Sync
 
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/daniel-silva-perez/ai-chat-sync)
+[![GitLab Repo](https://img.shields.io/badge/GitLab-Repo-FC6D26?logo=gitlab&logoColor=white)](https://gitlab.com/danielsilvaperez/ai-chat-sync)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
 Sync your AI conversations across ChatGPT, Claude, and Gemini seamlessly.
 
 AI Chat Sync is a lightweight userscript that injects your conversation history from one AI provider directly into the native sidebar of another. It allows you to view foreign chats in an overlay that matches the host's native UI and continue those conversations with full historical context.
