@@ -1,38 +1,39 @@
 # AI Chat Sync
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white)](https://github.com/daniel-silva-perez/ai-chat-sync)
-[![GitLab Repo](https://img.shields.io/badge/GitLab-Repo-FC6D26?logo=gitlab&logoColor=white)](https://gitlab.com/danielsilvaperez/ai-chat-sync)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+Local-first userscript that syncs AI conversations across ChatGPT, Claude, and Gemini without a backend or external API keys.
 
-Sync your AI conversations across ChatGPT, Claude, and Gemini seamlessly.
+## What It Does
 
-AI Chat Sync is a lightweight userscript that injects your conversation history from one AI provider directly into the native sidebar of another. It allows you to view foreign chats in an overlay that matches the host's native UI and continue those conversations with full historical context.
+- Saves conversation history locally through userscript storage
+- Surfaces synced chats inside supported AI-product sidebars
+- Opens foreign chats in a native-feeling overlay
+- Helps continue a synced conversation by carrying context into a new native chat
+- Keeps data on the user's machine instead of routing it through a service
 
-## 🚀 Features
+## Why It Matters
 
-- **Native Sidebar Integration**: Synced chats appear directly in the sidebar of ChatGPT, Claude, and Gemini.
-- **Aesthetic Platform Badges**: Each synced chat is marked with a beautiful, platform-specific gradient badge and icon.
-- **Native-Themed Overlay**: View chats from other providers in a high-fidelity overlay that mimics the host platform's design (Dark mode for ChatGPT, warm cream for Claude, clean white for Gemini).
-- **Contextual Continuation**: Continue any synced chat. The script automatically creates a new native chat and pastes the context for you to review before sending.
-- **Privacy First**: All data is stored locally in your browser using userscript storage. No external servers or API keys are required.
+AI workflows often fragment across products. This project treats portability as a browser integration problem: different DOMs, different sidebars, different interaction models, and a strong local-first privacy constraint.
 
-## 🛠 Installation
+## Supported Platforms
 
-1. Install a userscript manager like [Tampermonkey](https://www.tampermonkey.net/).
-2. Create a new script and paste the contents of `ai_chat_sync.user.js`.
-3. Save and visit [ChatGPT](https://chatgpt.com), [Claude](https://claude.ai), or [Gemini](https://gemini.google.com).
+- ChatGPT
+- Claude
+- Gemini
 
-## 💡 How to Use
+## Installation
 
-1. **Sync**: Simply browse your chats as you normally would. The script automatically saves them to your local storage.
-2. **Navigate**: Switch to a different AI provider.
-3. **View**: Look at the "Synced Chats" section in the native sidebar.
-4. **Continue**: Click a synced chat to open the overlay. Type a message and hit the send button. The script will move you to a new native chat and paste the context for your final review.
+1. Install a userscript manager such as Tampermonkey.
+2. Create a new script.
+3. Paste in `ai_chat_sync.user.js`.
+4. Visit a supported AI assistant.
 
-## 📜 License
+## Recruiter Signals
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Browser automation and UI integration
+- Privacy-conscious product design
+- Cross-product workflow thinking
+- Single-file deployability for lightweight user tools
 
-### Credits
+## License
 
-Includes work derived from [revivalstack](https://github.com/revivalstack) (MIT License 2025).
+MIT. Includes work derived from RevivalStack under MIT License.
